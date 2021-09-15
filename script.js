@@ -1,28 +1,29 @@
-var x = 0;
-var y = 200;
-var speed = 3;
-var speedY = 4;
+class ball {
+  constructor(x, y, w, h, vx, vy)
+  this.x
+  this.y
+  this.w
+  this.h
+  this.vx
+  this.vy
+}
 
 function setup() {
-	createCanvas(400, 400);
+  createCanvas(400,300);
+
+  ball 1= new Ball(30, 200, 50, 50, 5, 5)
+
+  ball2= new Ball(120, 210, 50, 50, 3, 3)
+
+  ball3= new Ball(200, 150, 50, 50, 1, 1)
 }
 
 function draw() {
-	background(220);
-	ellipse(x, y, 40, 40);
-	x += speed;
-	y += speedY;
+  background(225); 
 
-	if (x > width || x < 0) {
-		speed *= -1;
-	}
-		
-	if (y > height || y < 0) {
-		speedY *= -1;
-	}
-
-
-
+  ball1.draw();
+  ball2.draw();
+  ball3.draw();
 }
 
-	
+	 
